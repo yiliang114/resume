@@ -1,0 +1,50 @@
+name: 'docs-branch-push'
+
+on:
+  push:
+    branches:
+      - 'docs'
+
+jobs:
+  pre-release:
+    name: 'docs branch push'
+    runs-on: 'ubuntu-latest'
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Get yarn cache
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - uses: actions/cache@v1
+        with:
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install Dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          yarn --frozen-lockfile --non-interactive
+
+      - name: Build
+        run: |
+          yarn build
+
+      - name: Commit dist files
+        run: |
+          cd docs/.vuepress/dist
+          git init
+          git config --global user.name "${{ secrets.USERNAME }}"
+          git config --global user.email "${{ secrets.EMAIL }}"
+          git add -A
+          git commit -m 'deploy'
+
+      - name: Push changes to master(gh-pages) branch
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.TOKEN }}
+          branch: master
+          force: true
