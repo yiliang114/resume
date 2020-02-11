@@ -1,13 +1,13 @@
-name: 'master-branch-release auto release'
+name: 'gh-pages-branch-release auto release'
 
 on:
   push:
     branches:
-      - master
+      - gh-pages
 
 jobs:
   pre-release:
-    name: 'master-branch-release auto release'
+    name: 'gh-pages-branch-release auto release'
     runs-on: 'ubuntu-latest'
 
     steps:
