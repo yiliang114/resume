@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "vuepress": "^1.2.0",
-    "vuepress-theme-resume": "^0.1.0"
+    "vuepress-theme-md-resume": "^0.1.5"
   },
   "engines": {
     "node": ">= 6.0.0",

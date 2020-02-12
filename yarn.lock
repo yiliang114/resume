@@ -7336,6 +7336,11 @@ vuepress-plugin-smooth-scroll@^0.0.3:
   dependencies:
     smoothscroll-polyfill "^0.4.3"
 
+vuepress-theme-md-resume@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.npm.taobao.org/vuepress-theme-md-resume/download/vuepress-theme-md-resume-0.1.5.tgz#22a39570659197ee25fec18bcaa88cbe0f2771e5"
+  integrity sha1-IqOVcGWRl+4l/sGLyqiMvg8nceU=
+
 vuepress-theme-resume@^0.1.0:
   version "0.1.0"
   resolved "https://registry.npm.taobao.org/vuepress-theme-resume/download/vuepress-theme-resume-0.1.0.tgz#d047154c8df3e195885cb0aa391445b123b2b2c2"
