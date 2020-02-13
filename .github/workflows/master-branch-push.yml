@@ -33,6 +33,22 @@ jobs:
         run: |
           yarn build
 
+      - name: Commit dist files and Push -f
+        run: |
+          cd dist
+          git init
+          git config --global user.name "${{ secrets.USERNAME }}"
+          git config --global user.email "${{ secrets.EMAIL }}"
+          git add -A
+          git commit -m 'deploy'
+          git push --quiet --force https://${{ secrets.TOKEN }}@github.com/yiliang114/resume.git master:gh-pages
+      # - name: Push changes to gh-pages branch
+      #   uses: ad-m/github-push-action@master
+      #   with:
+      #     github_token: ${{ secrets.TOKEN }}
+      #     branch: gh-pages
+      #     force: true
+
       - name: Deploy to Server
         uses: burnett01/rsync-deployments@4.0
         with:
@@ -42,19 +58,3 @@ jobs:
           remote_host: ${{ secrets.REMOTE_HOST }}
           remote_user: ${{ secrets.REMOTE_USER }}
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-      - name: Commit dist files
-        run: |
-          cd dist
-          git init
-          git config --global user.name "${{ secrets.USERNAME }}"
-          git config --global user.email "${{ secrets.EMAIL }}"
-          git add -A
-          git commit -m 'deploy'
-
-      - name: Push changes to gh-pages branch
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.TOKEN }}
-          branch: gh-pages
-          force: true
