@@ -1,22 +1,22 @@
 <h1>
   <span>易良</span>
   <ul>
-    <li><span>电话</span>xxx xxxx xxxx</li>
-    <li><span>QQ</span>xxxxxxxxxxxxx</li>
-    <li><span>邮箱</span><a href="mailto:xxxxxxxx@foxmail.com">xxxxxxxx@foxmail.com</a></li>
-    <li><span>Github</span><a>github.com/wannaxiao</a></li>
+    <!-- <li><span>电话</span>xxx xxxx xxxx</li> -->
+    <li><span>QQ</span>1144323068</li>
+    <li><span>邮箱</span><a href="mailto:1144323068@qq.com">1144323068@qq.com</a></li>
+    <li><span>Github</span><a>github.com/yiliang114</a></li>
   </ul>
 </h1>
 
 ## 教育经历
 
-硕士 xxxxxxxx 大学 软件工程 <span class="right">2014.09 - 2017.06</span><br>
-本科 xxxxxxxxxxxx 大学 电子信息工程 <span class="right">2010.09 - 2014.06</span>
+本科 浙江工业大学 软件工程 <span class="right">2014.09 - 2018.06</span>
 
 ## 工作经历
 
-xxxxxxxxxxxx 公司(初创)-xxxxx 部门 xxxxxxx 岗位<span class="right">2016.07 - 至今</span><br>
-xxxxxxxxxxxx 公司(上市)-xxxxxxxxx 部门 xxxxxxx 岗位<span class="right">2014.07 - 2016.07</span>
+深圳腾讯科技有限公司-腾讯云 Web 前端开发<span class="right">2017.11 - 至今</span>
+
+杭州溪居科技有限公司(初创)-技术部门 研发岗位<span class="right">2017.02 - 2017.06</span><br>
 
 - 获得荣誉：**xxxxxxxxxxxxxxxxxxxxxx**
 
