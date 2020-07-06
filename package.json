@@ -21,7 +21,7 @@
     "build": "vuepress build example"
   },
   "devDependencies": {
-    "vuepress": "^1.2.0",
+    "vuepress": "^1.5.2",
     "vuepress-theme-md-resume": "^0.1.5"
   },
   "engines": {
