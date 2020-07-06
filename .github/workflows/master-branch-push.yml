@@ -48,13 +48,13 @@ jobs:
       #     github_token: ${{ secrets.TOKEN }}
       #     branch: gh-pages
       #     force: true
-
-      - name: Deploy to Server
-        uses: burnett01/rsync-deployments@4.0
-        with:
-          switches: -avzr --delete
-          path: dist/
-          remote_path: ${{ secrets.REMOTE_TARGET }}
-          remote_host: ${{ secrets.REMOTE_HOST }}
-          remote_user: ${{ secrets.REMOTE_USER }}
-          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+      # 暂时不需要了
+      # - name: Deploy to Server
+      #   uses: burnett01/rsync-deployments@4.0
+      #   with:
+      #     switches: -avzr --delete
+      #     path: dist/
+      #     remote_path: ${{ secrets.REMOTE_TARGET }}
+      #     remote_host: ${{ secrets.REMOTE_HOST }}
+      #     remote_user: ${{ secrets.REMOTE_USER }}
+      #     remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
