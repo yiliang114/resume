@@ -6,16 +6,16 @@
  */
 module.exports = {
   title: '易良的简历',
-  base:
-    process.env.NODE_ENV === 'production'
-      ? 'https://cdn.jsdelivr.net/gh/yiliang114/resume@deploy/'
-      : '',
+  base: '/resume',
+  // process.env.NODE_ENV === 'production'
+  //   ? 'https://cdn.jsdelivr.net/gh/yiliang114/resume@deploy/'
+  //   : '',
   dest: 'dist',
   head: [
     [
       'link',
-      { rel: 'shortcut icon', href: '/favicon.icon.ico', type: 'image/jpg' }
-    ]
+      { rel: 'shortcut icon', href: '/favicon.icon.ico', type: 'image/jpg' },
+    ],
   ],
   theme: 'md-resume',
   themeConfig: {
@@ -26,5 +26,5 @@ module.exports = {
     //     children: ['/']
     //   }
     // ]
-  }
-}
+  },
+};
