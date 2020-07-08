@@ -6,7 +6,7 @@
  */
 module.exports = {
   title: '易良的简历',
-  base: '/resume',
+  base: '/resume/',
   // process.env.NODE_ENV === 'production'
   //   ? 'https://cdn.jsdelivr.net/gh/yiliang114/resume@deploy/'
   //   : '',
