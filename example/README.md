@@ -1,10 +1,11 @@
 <h1>
   <span>易良</span>
   <ul>
-    <!-- <li><span>电话</span>xxx xxxx xxxx</li> -->
+    <li><span>男</span>1995.12</li>
     <li><span>QQ</span>1144323068</li>
     <li><span>邮箱</span><a href="mailto:1144323068@qq.com">1144323068@qq.com</a></li>
     <li><span>Github</span><a>github.com/yiliang114</a></li>
+    <li><span>更新时间</span>2020-07-12</li>
   </ul>
 </h1>
 
@@ -14,9 +15,9 @@
 
 ## 工作经历
 
-深圳腾讯科技有限公司-腾讯云 Web 前端开发<span class="right">2017.11 - 至今</span>
+深圳腾讯科技有限公司 腾讯云 Web 前端开发<span class="right">2017.11 - 至今</span>
 
-杭州溪居科技有限公司(初创)-技术部门 研发岗位<span class="right">2017.02 - 2017.06</span><br>
+杭州溪居科技有限公司(初创) 技术部门 研发、产品经理<span class="right">2017.02 - 2017.06</span><br>
 
 - 获得荣誉：**xxxxxxxxxxxxxxxxxxxxxx**
 
@@ -58,12 +59,11 @@
 
 ## 技能描述
 
-- 了解 XXXXXXXXXXXXXXXXXXX，**掌握 XXXXXXXXXXXXX**
-- 熟悉 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-- 了解 XXXXX，XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-- 熟悉 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-- 掌握 XXXXXXXXXX，XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-- XXXXXXXXXXXXXXXXXXXX，XXXXXXXXXXXXX
+- 了解 XXXXXXXXXXXXXXXXXXX，**掌握 Vue**
+- 源码级别熟悉 Vue 以及 Vue-Router, Vuex 等
+- 了解 React, 有实际项目开发经验
+- 了解 Node, 有实际项目开发经验
+- 了解 Webpack
 
 ## 自我评价
 
