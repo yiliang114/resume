@@ -43,7 +43,7 @@ function writeFile(result, filename = 'urls.txt') {
 }
 
 async function start() {
-  const result = readFileList('dist', [], 'https://yiliang.site/resume').join(
+  const result = readFileList('dist', [], 'https://resume.yiliang.site').join(
     '\n',
   );
   await writeFile(result);

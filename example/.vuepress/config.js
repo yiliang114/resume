@@ -6,16 +6,15 @@
  */
 module.exports = {
   title: '易良的简历',
-  base: '/resume/',
+  //
+  // base: '/resume/',
+  // 不使用 jsdelivr 白嫖啦~
   // process.env.NODE_ENV === 'production'
   //   ? 'https://cdn.jsdelivr.net/gh/yiliang114/resume@deploy/'
   //   : '',
   dest: 'dist',
   head: [
-    [
-      'link',
-      { rel: 'shortcut icon', href: '/favicon.icon.ico', type: 'image/jpg' },
-    ],
+    ['link', { rel: 'shortcut icon', href: '/favicon.ico', type: 'image/jpg' }],
   ],
   theme: 'md-resume',
   themeConfig: {
