@@ -1,0 +1,41 @@
+{
+  "name": "易良同学的简历",
+  "short_name": "易良同学",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#000",
+  "theme_color": "#3eaf7c",
+  "description": "正在努力",
+  "icons": [
+    {
+      "src": "/assets/images/resume-shifen.jpg",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/resume-shifen.jpg",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/resume-shifen.jpg",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/resume-shifen.jpg",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/resume-shifen.jpg",
+      "sizes": "168x168",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/resume-shifen.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

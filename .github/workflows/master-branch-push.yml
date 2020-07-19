@@ -1,4 +1,4 @@
-name: "master branch push"
+name: 'master branch push'
 
 on:
   push:
@@ -7,8 +7,8 @@ on:
 
 jobs:
   pre-release:
-    name: "master branch push"
-    runs-on: "ubuntu-latest"
+    name: 'master branch push'
+    runs-on: 'ubuntu-latest'
 
     steps:
       - uses: actions/checkout@v2
@@ -32,6 +32,7 @@ jobs:
       - name: Build
         run: |
           yarn build
+          yarn run baiduPush
 
       - name: Commit dist files and Push -f
         run: |

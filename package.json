@@ -18,10 +18,16 @@
   ],
   "scripts": {
     "dev": "vuepress dev example",
-    "build": "vuepress build example"
+    "build": "vuepress build example",
+    "baiduPush": "node readFileList && bash baiduPush.sh"
   },
   "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.5.2",
+    "@vuepress/plugin-pwa": "^1.5.2",
     "vuepress": "^1.5.2",
+    "vuepress-plugin-baidu-autopush": "^1.0.1",
+    "vuepress-plugin-baidu-tongji": "^1.0.1",
+    "vuepress-plugin-sitemap": "^2.3.1",
     "vuepress-theme-md-resume": "^0.1.5"
   },
   "engines": {

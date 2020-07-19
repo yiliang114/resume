@@ -27,4 +27,23 @@ module.exports = {
     //   }
     // ]
   },
+  plugins: [
+    [
+      'vuepress-plugin-sitemap',
+      { hostname: 'https://yiliang.site', outFile: 'sitemap.xml' },
+    ],
+    [
+      'baidu-tongji',
+      {
+        hm: '9aff301c4ae8ff27118e8bb605bb3b09',
+      },
+    ],
+    [
+      '@vuepress/google-analytics',
+      {
+        ga: 'UA-156101458-1',
+      },
+    ],
+    'vuepress-plugin-baidu-autopush',
+  ],
 };
