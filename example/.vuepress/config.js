@@ -15,6 +15,7 @@ module.exports = {
   dest: 'dist',
   head: [
     ['link', { rel: 'shortcut icon', href: '/favicon.ico', type: 'image/jpg' }],
+    ['meta', { name: 'baidu-site-verification', content: 'i7GUUhZj3e' }],
   ],
   theme: 'md-resume',
   themeConfig: {
