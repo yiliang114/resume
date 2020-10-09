@@ -51,7 +51,7 @@
 
 5. tbp 错误日志收集工具方案的落地和开发：在客户使用控制台、h5、小程序遇到问题，难以收集后台同学排查需要的 requestid。这个工具打通了客户端以及企业微信，只要用户触发暗门，客户端的 requestid 日志即可自动推送到 tbp 开发的企业微信中。解决难以收集用户出现错误的 requestid 的痛点，用户只需触发暗门，requestid 将自动发送到我们指定的企业微信中。
 
-6. tbp 对内、对外文档中心框架搭建 tbp.oa.com/document, tbp.qq.com/document 。基于 vuepress + qci 自动部署组内文档，通过不同的分支进行分开管理内外网文档的权限。 团队所有沉淀的文档和 wiki 指引都只要开发同学提供 markdown 文件，提交 git 之后即可快速生成文档。
+6. tbp 对内、对外文档中心框架搭建。 基于 vuepress + qci 自动部署组内文档，通过不同的分支进行分开管理内外网文档的权限。 团队所有沉淀的文档和 wiki 指引都只要开发同学提供 markdown 文件，提交 git 之后即可快速生成文档。
 7. tbp 通用 h5 页面。 [链接](https://tbp.cloud.tencent.com/tbp-h5-v2/?AgentId=f+kMfPU1Bm9zjnm6h7c09s4eGGW0iLMQqNuR+S86jT7hN/uvEn7WnlHc+XLpj78nBVkxhq2y6JRTBTE1YCxKNV/w3CatCyAsT0N3CBEgnHs=) h5 完成两个大版本的迭代，1.0 版本仅服务于上海开放大学；2.0 版本经过改版之后使得客户能够 0 成本快速接入，有新客户接入开发 0 改动。 目前已服务企鹅电竞、上海开放大学两个客户。
 
 8. 参与了腾讯前端开源框架 omi，提了一些 commit， 主要负责 omiv 。omiv 是一个用 omi 的思想触发更新渲染的状态管理工具，为 vue 组件传入一个作为 store 的属性（ store 包含 state 以及修改 state 的一些方法），store 全局会依赖收集，依赖 store 中的变量的 vue 实例。再利用 obaa 监听 js 对象和数组的能力，使得被观察的值变化的时候，从全局依赖列表中取出组件，自动执行 `$forceUpdate` 函数进行更新。 与 Vuex 相比的优势是： 由于 obaa 的能力，omiv 可以监听到通过数组下标修改值和数组 size 的变化；另外减少了 vuex 很多的约束，能够更灵活修改状态。
