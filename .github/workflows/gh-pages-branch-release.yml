@@ -1,0 +1,19 @@
+name: 'gh pages branch release auto release'
+
+on:
+  push:
+    branches:
+      - gh-pages
+
+jobs:
+  pre-release:
+    name: 'gh pages branch release auto release'
+    runs-on: 'ubuntu-latest'
+
+    steps:
+      - uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: ${{ secrets.TOKEN }}
+          automatic_release_tag: 'deploy'
+          prerelease: false
+          title: 'docs branch auto development build release.'
